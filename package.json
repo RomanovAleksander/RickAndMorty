@@ -1,0 +1,21 @@
+{
+  "name": "weather-app",
+  "version": "1.1.0",
+  "description": "Weather On Complemental Steroids",
+  "main": "index.html",
+  "repository": "https://github.com/RomanovAleksander/RickAndMorty.git",
+  "author": "Alexander <1eksandr999@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "prebuild-dev": "shx rm -rf dist/",
+    "build-dev": "parcel build ./src/index.html --no-minify --public-url ./",
+    "prebuild": "shx rm -rf dist/",
+    "build": "parcel build ./src/index.html --public-url ./",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+  },
+  "devDependencies": {
+    "shx": "^0.3.2"
+  }
+}

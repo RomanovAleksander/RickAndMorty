@@ -1,7 +1,7 @@
-import { NotFound } from "../components/NotFound";
-import { App } from '../components/App'
-import { CharacterItem } from "../components/CharacterItem";
-import {CharacterList} from "../components/CharacterList";
+import { NotFound } from "../Components/NotFound";
+import { App } from '../Components/App'
+import { CharacterItem } from "../Components/CharacterItem";
+import {CharacterList} from "../Components/CharacterList";
 
 export const routes = [
     {

@@ -7,7 +7,7 @@ export default class Router {
         this.app = new App(host, {
             routerOutlet: this.routerOutlet
         });
-        this.notFound = this.routes.find(route => route.path === '**');
+        this.notFound = this.routes.find(route => route.path === '**')
         window.addEventListener('hashchange', this.handleUrlChange.bind(this));
     }
 
